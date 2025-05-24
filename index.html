@@ -26,7 +26,7 @@
             <input type="text" id="city-input" placeholder="Enter city name" 
                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 text-gray-700 placeholder-gray-400 transition duration-300">
         </div>
-        <div class="mb-6">
+        <div class="mb-6 sm:m-0">
             <button id="search-button" onclick="fetchData()" 
                     class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 Search
@@ -39,21 +39,21 @@
         <div id="weather-info" class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
     <!-- Left column with icon and city -->
     <div class="flex flex-col items-center justify-center">
-        <img id="weather-icon" class=" mb-4" alt="Weather Icon" src="">
-        <p id="temperature" class="text-5xl font-bold text-gray-600 mb-4">--</p>
+        <img id="weather-icon" class=" mb-4 sm:m-0" alt="Weather Icon" src="">
+        <p id="temperature" class="text-5xl font-bold text-gray-600 mb-4 sm:m-0 text-sm">--</p>
     </div>
     <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 z-50"></div>
     <!-- Right column with temperature and details -->
     <div class="flex flex-col items-center justify-center">
-        <p id="city-name" class="text-2xl font-bold text-gray-800">--</p>
+        <p id="city-name" class="text-3xl text-center font-bold text-gray-800 sm:text-xl  ">--</p>
         
-        <p id="description" class="text-xl font-semibold text-gray-700 uppercase mt-10">--</p>
-        <p id="suggestion" class="text-sm text-gray-500 text-center">--</p>
+        <p id="description" class="text-xl font-semibold text-center text-gray-500 mt-5 sm:text-sm">--</p>
+        <p id="suggestion" class="text-sm text-gray-500 text-center sm:text-sm">--</p>
     </div>
 </div>
 
 <div id="error-message" class="text-red-500 mt-4 font-bold text-3xl text-center"></div>
 <!-- ...existing code... -->
-    <script src="app2.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
