@@ -72,10 +72,10 @@ function getWeatherIconURL(condition) {
         return "https://img.icons8.com/fluency/96/rain.png";
     } else if (condition.includes("clear")) {
         // Sunny icon
-        return "https://cdn-icons-png.flaticon.com/128/1163/1163661.png";
+        return "https://cdn-icons-png.flaticon.com/128/4814/4814268.png";
     } else if (condition.includes("cloud")) {
         // Cloud icon
-        return "https://img.icons8.com/fluency/96/cloud.png";
+        return "https://cdn-icons-png.flaticon.com/128/1163/1163661.png";
     } else if (condition.includes("snow")) {
         // Snow icon
         return "https://cdn-icons-png.flaticon.com/128/2315/2315309.png";
